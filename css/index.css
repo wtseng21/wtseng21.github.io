@@ -35,3 +35,7 @@ body {
   font-weight: normal;
   font-size: 0.75vw;
 }
+
+.header hr {
+  width: 50vw;
+}
