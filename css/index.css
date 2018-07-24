@@ -19,7 +19,6 @@ body {
   margin-top: 5%;
   max-width: 20%;
   max-height: 20%;
-
 }
 
 .header h1 {
@@ -38,4 +37,34 @@ body {
 
 .header hr {
   width: 50vw;
+}
+
+.navigation table {
+  /* background-color: #ffffff; */
+  margin: auto;
+  /* border-collapse: collapse; */
+  border-spacing: 1vw;
+  width: 60vw;
+  border-color: #000000;
+}
+
+.navigation table img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.about:hover .image,
+.designs:hover .image,
+.projects:hover .image,
+.contact:hover .image {
+  opacity: 0.33;
 }
