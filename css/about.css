@@ -4,6 +4,7 @@ body {
 }
 
 .wrapper {
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -33,4 +34,17 @@ body {
   margin-top: 3vw;
   max-width: 20%;
   max-height: 20%;
+}
+
+.header h5 {
+  letter-spacing: 8.75px;
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.header #home {
+  letter-spacing: 3px;
+  margin-top: 25px;
+  font-weight: normal;
 }
