@@ -14,10 +14,10 @@
   RewriteCond %{REQUEST_FILENAME}\.php -f
   RewriteRule ^([^\.]+)/$ $1.php
 
-# Remove .php-extension from url
+# Remove .html-extension from url
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME}\.html -f
-  RewriteRule ^([^\.]+)/$ $1.html 
+  RewriteRule ^([^\.]+)/$ $1.html
 
 # End of Apache Rewrite Rules
  </IfModule>
