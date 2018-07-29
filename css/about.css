@@ -30,12 +30,6 @@ body {
   color: #0099ff;
 }
 
-.header img {
-  margin-top: 3vw;
-  max-width: 20%;
-  max-height: 20%;
-}
-
 .header h5 {
   letter-spacing: 8.75px;
   margin-top: 10px;
@@ -47,4 +41,25 @@ body {
   letter-spacing: 3px;
   margin-top: 25px;
   font-weight: normal;
+}
+
+#title {
+  letter-spacing: 5px;
+}
+
+#titleline {
+  width: 910px;
+}
+
+.about-container {
+  padding-top: 8px;
+  text-align: left;
+  margin-left: 26%;
+  margin-right: 26%;
+}
+
+.about-container img {
+  padding-right: 50px;
+  width: 256px;
+  float: left;
 }

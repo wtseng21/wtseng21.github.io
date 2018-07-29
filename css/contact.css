@@ -30,12 +30,6 @@ body {
   color: #0099ff;
 }
 
-.header img {
-  margin-top: 3vw;
-  max-width: 20%;
-  max-height: 20%;
-}
-
 .header h5 {
   letter-spacing: 8.75px;
   margin-top: 10px;
