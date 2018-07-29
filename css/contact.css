@@ -4,10 +4,10 @@ body {
 }
 
 .wrapper {
-  vertical-align: middle;
   text-align: center;
 }
 
+/* Header */
 .header {
   display: block;
   position: relative;
@@ -47,4 +47,72 @@ body {
   letter-spacing: 3px;
   margin-top: 25px;
   font-weight: normal;
+}
+
+.header hr {
+  width: 910px;
+}
+
+/* Form */
+.form h1 {
+  letter-spacing: 5px;
+}
+
+.form form {
+  text-align: left;
+  padding-left: 495px;
+  font-size: 20px;
+}
+
+.form #fname {
+  padding: 10px;
+  width: 424px;
+}
+
+.form #lname {
+  padding: 10px;
+  width: 424px;
+}
+
+.form #email {
+  padding: 10px;
+  width: 424px;
+}
+
+.form #phone {
+  padding: 10px;
+  width: 424px;
+}
+
+.form #subject {
+  padding: 10px;
+  width: 424px;
+}
+
+.form #message {
+  padding: 10px;
+  width: 888px;
+  font-family: helvetica;
+}
+
+.form #submit {
+  display: block;
+  border-radius: 25px;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 12px 32px;
+  background-color: #555555;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.form #submit:hover {
+  opacity: 0.5;
+}
+
+.split span {
+  margin-left: 409px;
 }
