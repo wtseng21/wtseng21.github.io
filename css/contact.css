@@ -50,52 +50,52 @@ body {
 }
 
 /* Form */
-.form hr {
+.form-container hr {
   width: 910px;
 }
 
-.form h1 {
+.form-container h1 {
   letter-spacing: 5px;
 }
 
-.form form {
+.form-container form {
   text-align: left;
   padding-left: 26%;
   font-size: 20px;
 }
 
-.form #fname {
+.form-container form #fname {
   padding: 10px;
   width: 424px;
 }
 
-.form #lname {
+.form-container form #lname {
   padding: 10px;
   width: 424px;
 }
 
-.form #email {
+.form-container form #email {
   padding: 10px;
   width: 424px;
 }
 
-.form #phone {
+.form-container form #phone {
   padding: 10px;
   width: 424px;
 }
 
-.form #subject {
+.form-container form #subject {
   padding: 10px;
   width: 424px;
 }
 
-.form #message {
+.form-container form #message {
   padding: 10px;
   width: 888px;
   font-family: helvetica;
 }
 
-.form #submit {
+.form-container form #submit {
   display: block;
   border-radius: 25px;
   font-size: 15px;
@@ -109,7 +109,7 @@ body {
   transition: all 0.5s;
 }
 
-.form #submit:hover {
+.form-container form #submit:hover {
   opacity: 0.5;
 }
 
