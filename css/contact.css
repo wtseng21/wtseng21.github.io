@@ -49,11 +49,11 @@ body {
   font-weight: normal;
 }
 
-.header hr {
+/* Form */
+.form hr {
   width: 910px;
 }
 
-/* Form */
 .form h1 {
   letter-spacing: 5px;
 }
