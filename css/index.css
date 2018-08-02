@@ -8,7 +8,6 @@ body {
 }
 
 .wrapper {
-  vertical-align: middle;
   text-align: center;
 }
 
@@ -64,16 +63,15 @@ body {
   width: 910px;
 }
 
-.navigation table {
-  margin-left: auto;
-  margin-right: auto;
-  border-spacing: 20px;;
-  width: 955px;
+#navigation {
+  display: flex;
+  justify-content: center;
 }
 
-.navigation table img {
-  max-width: 100%;
-  max-height: 100%;
+#navigation img {
+  max-width: 221px;
+  float: left;
+  padding: 5px;
 }
 
 .image {
