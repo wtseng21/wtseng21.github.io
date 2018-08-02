@@ -43,23 +43,26 @@ body {
   font-weight: normal;
 }
 
-#title {
-  letter-spacing: 5px;
-}
-
-#titleline {
+.header hr {
   width: 910px;
 }
 
+.header h1 {
+  letter-spacing: 5px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
 .about-container {
-  padding-top: 8px;
   text-align: left;
   margin-left: 26%;
   margin-right: 26%;
+  text-indent: 30px;
+  line-height: 27px;
 }
 
 .about-container img {
   padding-right: 50px;
-  width: 256px;
+  width: 200px;
   float: left;
 }
