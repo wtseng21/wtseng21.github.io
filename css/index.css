@@ -66,12 +66,13 @@ body {
 #navigation {
   display: flex;
   justify-content: center;
+  padding-top: 5px;
 }
 
 #navigation img {
-  max-width: 221px;
+  max-width: 213px;
   float: left;
-  padding: 5px;
+  padding: 10px;
 }
 
 .image {
