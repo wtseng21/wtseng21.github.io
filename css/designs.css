@@ -26,6 +26,10 @@ body {
   transition:color .2s ease-out, background 2s ease-in;
 }
 
+.header a:visited {
+  color: #000000;
+}
+
 .header a:hover {
   color: #0099ff;
 }

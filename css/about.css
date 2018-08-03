@@ -4,7 +4,6 @@ body {
 }
 
 .wrapper {
-  vertical-align: middle;
   text-align: center;
 }
 
@@ -26,6 +25,10 @@ body {
   transition:color .2s ease-out, background 2s ease-in;
 }
 
+.header a:visited {
+  color: #000000;
+}
+
 .header a:hover {
   color: #0099ff;
 }
@@ -43,7 +46,7 @@ body {
   font-weight: normal;
 }
 
-.header hr {
+#break {
   width: 910px;
 }
 
@@ -58,6 +61,7 @@ body {
   margin-right: auto;
   width: 910px;
   padding-top: 3px;
+  padding-bottom: 5px;
 }
 
 .about-container p {
