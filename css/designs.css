@@ -30,10 +30,10 @@ body {
   color: #0099ff;
 }
 
-.header img {
-  margin-top: 3vw;
-  max-width: 20%;
-  max-height: 20%;
+.header h1 {
+  letter-spacing: 5px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .header h5 {
@@ -41,6 +41,10 @@ body {
   margin-top: 10px;
   font-weight: normal;
   font-size: 15px;
+}
+
+.header hr {
+  width: 910px;
 }
 
 .header #home {
