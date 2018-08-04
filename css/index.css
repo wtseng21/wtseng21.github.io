@@ -94,3 +94,7 @@ body {
 .contact:hover .image {
   opacity: 0.33;
 }
+
+.footer {
+  font-size: 12px;
+}
