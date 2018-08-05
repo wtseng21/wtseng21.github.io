@@ -7,13 +7,15 @@ body {
   text-align: center;
 }
 
-.header {
+.header,
+.footer {
   display: block;
   position: relative;
   line-height: 10px;
 }
 
-.header a {
+.header a,
+.footer a {
   text-decoration: none;
 
   /* Multi-browser support */
@@ -26,7 +28,9 @@ body {
 }
 
 .header a:visited,
-.header a:link {
+.header a:link,
+.footer a:visited,
+.footer a:link {
   color: #8c8c8c;
 }
 
@@ -34,26 +38,13 @@ body {
   color: #0099ff;
 }
 
-.header h5 {
-  letter-spacing: 8.75px;
-  margin-top: 10px;
-  font-weight: normal;
-  font-size: 15px;
-}
-
-.header #home {
-  letter-spacing: 3px;
-  margin-top: 25px;
-  font-weight: normal;
-}
-
-#break {
+.header hr {
   width: 910px;
 }
 
 .header h1 {
   letter-spacing: 5px;
-  padding-top: 13px;
+  padding-top: 24px;
   padding-bottom: 13px;
 }
 

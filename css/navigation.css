@@ -1,0 +1,30 @@
+/*
+navigation.css is used for keeping a consistent appearance
+of the "HOME" button and the bottom navigation bar across
+different webpages
+*/
+
+.header #home {
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.footer {
+  padding-top: 24px;
+  color: #8c8c8c;
+}
+
+.footer #bottom-nav {
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.footer #selected {
+  color: #0099ff;
+}
+
+.footer a:hover {
+  color: #0099ff;
+}
