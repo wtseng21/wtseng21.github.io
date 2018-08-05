@@ -17,27 +17,6 @@ body {
   line-height: 10px;
 }
 
-.header a {
-  text-decoration: none;
-
-  /* Multi-browser support */
-  -o-transition:color .2s ease-out, background 2s ease-in;
-  -ms-transition:color .2s ease-out, background 2s ease-in;
-  -moz-transition:color .2s ease-out, background 2s ease-in;
-  -webkit-transition:color .2s ease-out, background 2s ease-in;
-
-  transition:color .2s ease-out, background 2s ease-in;
-}
-
-.header a:visited,
-.header a:link {
-  color: #595959;
-}
-
-.header a:hover {
-  color: #0099ff;
-}
-
 .header img {
   margin-top: 60px;
   max-width: 400px;
@@ -47,14 +26,14 @@ body {
 .header h1 {
   letter-spacing: .26em;
   font-weight: 600px;
-  margin-top: 40px;
   padding-left: 8px;
   font-size: 35px;
+  padding-top: 15px;
 }
 
 .header h5 {
   letter-spacing: .25em;
-  margin-top: 20px;
+
   font-weight: normal;
   font-size: 15px;
 }
@@ -66,6 +45,9 @@ body {
 #navigation {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 910;
   padding-top: 5px;
 }
 
@@ -84,13 +66,64 @@ body {
   backface-visibility: hidden;
 }
 
-.about:hover .image,
-.designs:hover .image,
-.projects:hover .image,
-.contact:hover .image {
+.column:hover .image {
   opacity: 0.33;
 }
 
 .footer {
   font-size: 12px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 975px) {
+  .header hr {
+    width: 445px;
+  }
+
+  .header img {
+    max-width: 256px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+    padding-top: 10px;
+  }
+
+  .header h5 {
+    font-size: 13.75px;
+  }
+
+  #navigation {
+    max-width: 600px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header hr {
+    width: 210px;
+  }
+
+  #navigation {
+    max-width: 300px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header img {
+    max-width: 175px;
+  }
+
+  .header h1 {
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+
+  .header h5 {
+    display: none;
+  }
 }
