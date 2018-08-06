@@ -1,5 +1,5 @@
 /*
-navigation.css is used for keeping a consistent appearance
+styles.css is used for keeping a consistent appearance
 of the "HOME" button and the bottom navigation bar across
 different webpages
 */
@@ -28,4 +28,8 @@ different webpages
 
 .footer a:hover {
   color: #0099ff;
+}
+
+hr {
+  max-width: 910px;
 }

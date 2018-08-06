@@ -38,10 +38,6 @@ body {
   color: #0099ff;
 }
 
-.header hr {
-  width: 910px;
-}
-
 .header h1 {
   letter-spacing: 5px;
   padding-top: 24px;
@@ -51,7 +47,7 @@ body {
 .about-container {
   margin-left: auto;
   margin-right: auto;
-  width: 910px;
+  max-width: 910px;
   padding-top: 3px;
 }
 
@@ -64,6 +60,10 @@ body {
   padding-right: 50px;
   width: 240px;
   float: left;
+}
+
+.about-container h3 {
+  text-align: left;
 }
 
 .external-links {
