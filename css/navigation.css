@@ -11,6 +11,7 @@ different webpages
 }
 
 .footer {
+  display: block;
   padding-top: 24px;
   color: #8c8c8c;
 }
