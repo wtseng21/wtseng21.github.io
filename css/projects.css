@@ -51,6 +51,30 @@ body {
   line-height: 5px;
 }
 
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.projectlist th:hover .image {
+  opacity: 0.33;
+}
+
+.projectlist a:link,
+.projectlist a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+.projectlist a:hover {
+  color: #0099ff;
+  transition: .5s ease;
+}
+
 .projectlist th {
   padding-left: 35px;
   padding-right: 35px;
