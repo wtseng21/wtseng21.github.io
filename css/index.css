@@ -114,6 +114,7 @@ body {
 
   .header img {
     max-width: 200px;
+    margin-top: 12px;
   }
 
   .header h1 {
