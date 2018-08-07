@@ -4,6 +4,10 @@ of the "HOME" button and the bottom navigation bar across
 different webpages
 */
 
+html {
+  overflow-y: scroll;
+}
+
 /* Header Styling */
 .header {
   display: block;
