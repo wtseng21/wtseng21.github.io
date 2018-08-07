@@ -1,0 +1,17 @@
+body {
+  background-color: #f2f2f2;
+  font-family: helvetica;
+}
+
+.wrapper {
+  text-align: center;
+  max-width: 910px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header h1 {
+  letter-spacing: 2px;
+  padding-top: 24px;
+  padding-bottom: 13px;
+}
