@@ -16,9 +16,57 @@ body {
   padding-bottom: 13px;
 }
 
+.iframe {
+  /* padding-bottom: 200px; */
+}
+
 #subtitle {
   letter-spacing: 2px;
   padding-top: 13px;
   padding-bottom: 10px;
   font-weight: normal;
+}
+
+.information {
+  text-align: left;
+}
+
+.information h3 {
+  line-height: 0px;
+}
+
+.information p {
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+
+.information a {
+  text-decoration: none;
+
+  /* Multi-browser support */
+  -o-transition:color .2s ease-out, background 2s ease-in;
+  -ms-transition:color .2s ease-out, background 2s ease-in;
+  -moz-transition:color .2s ease-out, background 2s ease-in;
+  -webkit-transition:color .2s ease-out, background 2s ease-in;
+
+  transition:color .2s ease-out, background 2s ease-in;
+}
+
+.information a:visited,
+.information a:link {
+  color: #8c8c8c;
+}
+
+.information a:hover {
+  color: #0099ff;
+}
+
+.left {
+  float: left;
+  width: 45%;
+}
+
+.right {
+  float: right;
+  width: 45%;
 }

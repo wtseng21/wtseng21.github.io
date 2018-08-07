@@ -55,6 +55,7 @@ different webpages
 
 /* Footer Styling */
 .footer {
+  clear: both;
   text-align: center;
   display: block;
   padding-top: 24px;
@@ -103,16 +104,4 @@ different webpages
 /* Misc. */
 hr {
   max-width: 910px;
-}
-
-i {
-  border: solid #000000;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 3px;
-}
-
-.left {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(135deg);
 }
