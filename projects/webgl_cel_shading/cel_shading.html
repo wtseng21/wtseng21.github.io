@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+
+<head>
+<title>CS114 Final Project: Cel Shading</title>
+<meta charset="utf-8">
+<link href="css/final.css" rel="stylesheet">
+<link href="css/spectrum.css" rel="stylesheet">
+
+<!-- Useful 3rd party libraries -->
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="js/spectrum.js"></script>
+<script type="text/javascript" src="js/glMatrix-0.9.5.js"></script>
+<script type="text/javascript" src="js/webgl-obj-loader.js"></script>
+
+<!-- Shader initialization utils -->
+<script type="text/javascript" src="js/shader-utils.js"></script>
+
+<!-- WebGL debugging utils -->
+<script type="text/javascript" src="js/webgl-debug.js"></script>
+<script type="text/javascript" src="js/debug-utils.js"></script>
+
+<!-- Model data -->
+<script type="text/javascript" src="meshes/teapot_obj.js"></script>
+<script type="text/javascript" src="meshes/bunny_obj.js"></script>
+
+<!-- WebGL functions -->
+<script type="text/javascript" src="cel_shading_webgl.js"></script>
+
+<!-- Other javascript functions -->
+<script type="text/javascript" src="final.js"></script>
+
+<script id="vs-outline-on" type="x-shader/x-vertex">
+    attribute vec2 a_position;
+    attribute vec2 a_texCoord;
+
+    uniform vec2 u_resolution;
+
+    varying vec2 v_texCoord;
+
+    void main(void) {
+      // convert the rectangle from pixels to 0.0 to 1.0
+      vec2 zeroToOne = a_position / u_resolution;
+
+      // convert from 0->1 to 0->2
+      vec2 zeroToTwo = zeroToOne * 2.0;
+
+      // convert from 0->2 to -1->+1 (clipspace)
+      vec2 clipSpace = zeroToTwo - 1.0;
+
+      gl_Position = vec4(clipSpace * vec2(1, -1), 0, 1);
+
+      // pass the texCoord to the fragment shader
+      // The GPU will interpolate this value between points.
+      v_texCoord = a_texCoord;
+    }
+</script>
+
+<script id="fs-outline-on" type="x-shader/x-fragment">
+    precision mediump float;
+
+    uniform sampler2D uCelTexture;
+    uniform vec3 uOutlineColor;
+    uniform int   uOutlineOn;
+
+    varying vec2 v_texCoord;
+
+    mat3 sx = mat3(
+        1.0, 2.0, 1.0,
+        0.0, 0.0, 0.0,
+       -1.0, -2.0, -1.0
+    );
+    mat3 sy = mat3(
+        1.0, 0.0, -1.0,
+        2.0, 0.0, -2.0,
+        1.0, 0.0, -1.0
+    );
+
+    void main(void) {
+      float w = 1.0/800.0;
+      float h = 1.0/450.0;
+
+      vec3 diffuse = texture2D(uCelTexture, v_texCoord.st).rgb;
+
+      vec4 n[9];
+      n[0] = texture2D(uCelTexture, v_texCoord.st + vec2( -w, -h));
+      n[1] = texture2D(uCelTexture, v_texCoord.st + vec2(0.0, -h));
+      n[2] = texture2D(uCelTexture, v_texCoord.st + vec2(  w, -h));
+      n[3] = texture2D(uCelTexture, v_texCoord.st + vec2( -w, 0.0));
+      n[4] = texture2D(uCelTexture, v_texCoord.st);
+      n[5] = texture2D(uCelTexture, v_texCoord.st + vec2(  w, 0.0));
+      n[6] = texture2D(uCelTexture, v_texCoord.st + vec2( -w, h));
+      n[7] = texture2D(uCelTexture, v_texCoord.st + vec2(0.0, h));
+      n[8] = texture2D(uCelTexture, v_texCoord.st + vec2(  w, h));
+
+      vec4 sobel_edge_h = n[2] + (2.0*n[5]) + n[8] - (n[0] + (2.0*n[3]) + n[6]);
+    	vec4 sobel_edge_v = n[0] + (2.0*n[1]) + n[2] - (n[6] + (2.0*n[7]) + n[8]);
+    	vec4 sobel = sqrt((sobel_edge_h * sobel_edge_h) + (sobel_edge_v * sobel_edge_v));
+
+      float g = sobel.r * 0.2 + sobel.g * 0.7 + sobel.b * 0.1;
+
+      if (uOutlineOn == 0) {
+        gl_FragColor = texture2D(uCelTexture, v_texCoord);
+        return;
+      }
+
+      if (g > 0.25) {
+
+        gl_FragColor = vec4(uOutlineColor, 1.0);
+      }
+
+       else {
+         gl_FragColor = texture2D(uCelTexture, v_texCoord);
+       }
+    }
+</script>
+
+<!-- Vertex shader for outline -->
+<script id="cel-outline-vs" type="x-shader/x-vertex">
+    uniform mat4 uMVMatrix;             // Model-view matrix
+    uniform mat4 uPMatrix;              // Projection matrix
+    uniform mat4 uNMatrix;              // Normal matrix
+    uniform int  uCelShadeOn;
+    uniform float uOutlineThickness;
+
+    attribute vec3 aVertexPosition;     // Vertex position in object space
+    attribute vec3 aVertexNormal;       // Vertex normal in object space
+
+    void main(void) {
+      gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition + aVertexNormal * (uOutlineThickness * 0.1), 1.0);
+    }
+</script>
+
+<!-- Fragment shader for outline -->
+<script id="cel-outline-fs" type="x-shader/x-fragment">
+    precision highp float;
+    uniform vec3 uOutlineColor;
+
+    void main(void) {
+        gl_FragColor = vec4(uOutlineColor, 1.0);
+    }
+</script>
+
+<!-- Simple vertex shader for drawing the light source as a point -->
+<script id="shader-vs-light" type="x-shader/x-vertex">
+    uniform mat4 uPMatrix;
+    attribute vec3 aVertexPosition;
+
+    void main(void) {
+        gl_PointSize = 10.0;
+        gl_Position = uPMatrix * vec4(aVertexPosition, 1.0);
+    }
+</script>
+
+<!-- Fragment shader: light draing -->
+<script id="shader-fs-light" type="x-shader/x-fragment">
+    precision mediump float;
+
+    void main(void) {
+        gl_FragColor = vec4(1.0, 1.0, 0.0, 1.0);
+    }
+</script>
+
+<!-- Common vertex shader for all shading models -->
+<script id="cel-shader-vs" type="x-shader/x-vertex">
+    uniform mat4 uMVMatrix;             // Model-view matrix
+    uniform mat4 uPMatrix;              // Projection matrix
+    uniform mat4 uNMatrix;              // Normal matrix
+
+    attribute vec3 aVertexPosition;     // Vertex position in object space
+    attribute vec3 aVertexNormal;       // Vertex normal in object space
+
+    varying vec3  vPosition;             // Vertex position (camera space)
+    varying vec3  vNormal;               // Vertex normal (camera space)
+
+    void main(void) {
+        vec4 camSpacePosition = uMVMatrix * vec4(aVertexPosition, 1.0);
+        vPosition = vec3(camSpacePosition);
+
+        gl_Position = uPMatrix * camSpacePosition;
+
+        vec4 camSpaceNormal = uNMatrix * vec4(aVertexNormal, 0.0);
+        vNormal = vec3(camSpaceNormal);
+    }
+</script>
+
+<!-- Fragment Shader for Cel Shading -->
+<script id="cel-shader-fs" type="x-shader/x-fragment">
+    precision mediump float;
+
+    uniform vec3  uLightPos;
+    uniform float uLightPower;
+    uniform vec3  uDiffuseColor;
+    uniform int   uCelBand;
+    uniform int   uCelShadeOn;
+    uniform float uAmbient;
+
+    varying vec3  vPosition;
+    varying vec3  vNormal;
+
+    //////////////////////
+    // HELPER FUNCTIONS //
+    //////////////////////
+
+    vec3 multiplyColor(vec3 color, float discreteIntensity) {
+        color.x = color.x * discreteIntensity;
+        color.y = color.y * discreteIntensity;
+        color.z = color.z * discreteIntensity;
+
+        return color;
+    }
+
+    ///////////////////
+    // MAIN FUNCTION //
+    ///////////////////
+
+    void main(void) {
+        vec3 color = uDiffuseColor;
+
+        // Diffuse Shading (Cel Shading Off)
+        if (uCelShadeOn == 0) {
+          vec3  lightDir = uLightPos - vPosition;
+          vec3  lightDirNormal = normalize(lightDir);
+          vec3  normalDirNormal = normalize(vNormal);
+          float lightDirLength = length(lightDir);
+          float intensity = uLightPower / (pow(lightDirLength, 2.0) / 5.0 + 5.0);
+
+          color = uDiffuseColor * (intensity * max(dot(normalDirNormal, lightDirNormal), 0.0) + uAmbient);
+        }
+
+        // Cel Shading (Cel Shading On)
+        else {
+            vec3  lightDir          = uLightPos - vPosition;
+            vec3  lightDirNormal    = normalize(lightDir);
+            vec3  normalDirNormal   = normalize(vNormal);
+            float lightDirLength    = length(lightDir);
+            float intensity         = dot(lightDirNormal, normalDirNormal);
+            float discreteIntensity = uLightPower / (pow(lightDirLength, 2.0) / 5.0 + 5.0);
+            float lightPowerMod     = uLightPower * 0.025;
+
+            // Makes color pitch black if negative intensity
+            if (intensity < 0.0) {
+              intensity = 0.0;
+            }
+
+            if (uCelBand == 3) {
+              if (intensity > 0.85 - lightPowerMod)
+                { color = multiplyColor(color, 0.90); }
+              else if (intensity > 0.50 - lightPowerMod)
+                { color = multiplyColor(color, 0.50); }
+              else
+                { color = multiplyColor(color, 0.20); }
+            }
+
+            if (uCelBand == 4) {
+              if (intensity > 0.90 - lightPowerMod)
+                { color = multiplyColor(color, 0.95); }
+              else if (intensity > 0.67 - lightPowerMod)
+                { color = multiplyColor(color, 0.60); }
+              else if (intensity > 0.33 - lightPowerMod)
+                { color = multiplyColor(color, 0.40); }
+              else
+                { color = multiplyColor(color, 0.20); }
+            }
+
+            if (uCelBand == 5) {
+              if (intensity > 0.95 - lightPowerMod)
+                { color = multiplyColor(color, 1.00); }
+              else if (intensity > 0.75 - lightPowerMod)
+                { color = multiplyColor(color, 0.80); }
+              else if (intensity > 0.50 - lightPowerMod)
+                { color = multiplyColor(color, 0.60); }
+              else if (intensity > 0.25 - lightPowerMod)
+                { color = multiplyColor(color, 0.40); }
+              else
+                { color = multiplyColor(color, 0.20); }
+            }
+
+            if (uCelBand == 6) {
+              if (intensity > 0.95 - lightPowerMod)
+                { color = multiplyColor(color, 1.00); }
+              else if (intensity > 0.80 - lightPowerMod)
+                { color = multiplyColor(color, 0.80); }
+              else if (intensity > 0.60 - lightPowerMod)
+                { color = multiplyColor(color, 0.67); }
+              else if (intensity > 0.40 - lightPowerMod)
+                { color = multiplyColor(color, 0.50); }
+              else if (intensity > 0.20 - lightPowerMod)
+                { color = multiplyColor(color, 0.33); }
+              else
+                { color = multiplyColor(color, 0.20); }
+            }
+        }
+
+        gl_FragColor = vec4(color, 1.0);
+    }
+</script>
+</head>
+
+
+<!-- HTML contents -->
+<body>
+    <h1>CS114 Final Project: Cel Shading</h1>
+    <h3>By: Carolyn Lai & Wesley Tseng</h3>
+    <h5>Based off of Project 1</h5>
+
+    <div class="droplist">
+        <span>
+            Object:
+            <select onchange="changeActiveMesh(this);">
+              <option value="0" selected="selected">Utah teapot</option>
+              <option value="1">Stanford bunny</option>
+            </select>
+        </span>
+        <span style="margin-left:30px">
+            Resolution:
+            <select onchange="changeResolution(this);">
+              <option value="0">640x360</option>
+              <option value="1" selected="selected">800x450</option>
+              <option value="2">960x540</option>
+            </select>
+        </span>
+
+        <table>
+            <tr>
+                <td width="200px"><input type="checkbox" onchange="changeAnimatedState(this.checked);">Animated object</td>
+                <td>
+                    <input id="sliderBar" type="range" min="1" max="36" value="6" onchange="updateSlider(this.value);" disabled>
+                    (<span id="sliderAmount">60</span>&deg;/s)
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div style="margin-top:10px">
+        <canvas id="canvas0" style="border:none;" width="800" height="450"></canvas>
+    </div>
+
+    <div class="panel">
+        <p>Light Source Parameters</p>
+        <table>
+            <tr>
+                <td width="200px"><input type="checkbox" onchange="changeAnimatedLightState(this.checked);">Animated light</td>
+                <td>
+                    <input id="sliderBarLight" type="range" min="1" max="36" value="6" onchange="updateSliderLight(this.value);" disabled>
+                    (<span id="sliderAmountLight">60</span>&deg;/s)
+                </td>
+            </tr>
+            <tr>
+                <td>Light power</td>
+                <td>
+                    <input id="sliderBar_LightPower" type="range" min="1" max="20" value="10" onchange="updateSlider_LightPower(this.value);">
+                    (<span id="sliderAmount_LightPower">5</span>)
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="panel" style="margin-left:10px">
+        <p>Shading Parameters</p>
+        <table>
+            <tr>
+                <td colspan="2"><input type="checkbox"
+                onchange="changeShowOutline(this.checked);">Show Outline</td>
+            </tr>
+
+            <tr>
+                <td width="200px">Cel Shading</td>
+                <td>
+                    <select onchange="enableCelShading(this);">
+                        <option value="0" selected="selected">Disabled</option>
+                        <option value="1">Enabled</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Diffuse Color</td>
+                <td>
+                    <input type="text" id="colorPicker"> (<span id="colorText">#1f75fe</span>)
+                </td>
+            </tr>
+
+            <tr>
+                <td>Outline Color</td>
+                <td>
+                    <input type="text" id="outlineColorPicker"> (<span id="outlineColorText">#000000</span>)
+                </td>
+            </tr>
+
+            <!-- <tr> -->
+                <!-- <td>Outline Thickness</td> -->
+                <!-- <td> -->
+                    <!-- <input id="sliderBar_outlineThickness" type="range" min="1" max="9" value="1" onchange="updateSlider_outlineThickness(this.value);"> -->
+                    <!-- (<span id="sliderAmount_outlineThickness">1</span>) -->
+                <!-- </td> -->
+            <!-- </tr> -->
+
+            <tr>
+                <td>Number of Bands</td>
+                <td>
+                    <input id="sliderBar_CelBands" type="range" min="3" max="6" value="3" onchange="updateSlider_CelBands(this.value);">
+                    (<span id="sliderAmount_CelBands">3</span>)
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="clear:left"></div>
+</body>
+
+</html>

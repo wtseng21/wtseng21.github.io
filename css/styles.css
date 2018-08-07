@@ -5,12 +5,16 @@ different webpages
 */
 
 .header #home {
+  margin-left: auto;
+  margin-right: auto;
   letter-spacing: 2px;
   font-weight: normal;
   font-size: 15px;
+  max-width: 910px;
 }
 
 .footer {
+  text-align: center;
   display: block;
   padding-top: 24px;
   color: #8c8c8c;
@@ -20,6 +24,12 @@ different webpages
   letter-spacing: 2px;
   font-weight: normal;
   font-size: 12px;
+}
+
+.footer p {
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 9px;
 }
 
 .footer #selected {

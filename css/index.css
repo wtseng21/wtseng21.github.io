@@ -8,6 +8,8 @@ body {
 }
 
 .wrapper {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -32,13 +34,8 @@ body {
 
 .header h5 {
   letter-spacing: .25em;
-
   font-weight: normal;
   font-size: 15px;
-}
-
-.header hr {
-  width: 910px;
 }
 
 #navigation {
