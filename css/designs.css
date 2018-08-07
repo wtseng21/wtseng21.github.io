@@ -5,38 +5,11 @@ body {
 
 .wrapper {
   text-align: center;
+  max-width: 910px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.header,
-.footer {
-  display: block;
-  position: relative;
-  line-height: 10px;
-}
-
-.header a,
-.footer a {
-  text-decoration: none;
-
-  /* Multi-browser support */
-  -o-transition:color .2s ease-out, background 2s ease-in;
-  -ms-transition:color .2s ease-out, background 2s ease-in;
-  -moz-transition:color .2s ease-out, background 2s ease-in;
-  -webkit-transition:color .2s ease-out, background 2s ease-in;
-
-  transition:color .2s ease-out, background 2s ease-in;
-}
-
-.header a:visited,
-.header a:link,
-.footer a:visited,
-.footer a:link {
-  color: #8c8c8c;
-}
-
-.header a:hover {
-  color: #0099ff;
-}
 
 .header h1 {
   letter-spacing: 5px;

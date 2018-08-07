@@ -4,7 +4,15 @@ of the "HOME" button and the bottom navigation bar across
 different webpages
 */
 
-.header #home {
+/* Header Styling */
+.header {
+  display: block;
+  position: relative;
+  line-height: 10px;
+}
+
+.header #home,
+.header #back {
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 2px;
@@ -13,12 +21,46 @@ different webpages
   max-width: 910px;
 }
 
+.header #back {
+  text-align: left;
+  margin: 0;
+  position: absolute;
+  font-size: 15px;
+}
+
+.header #home {
+  text-align: center;
+}
+
+.header a:visited,
+.header a:link {
+  color: #8c8c8c;
+}
+
+.header a:hover {
+  color: #0099ff;
+}
+
+.header a {
+  text-decoration: none;
+
+  /* Multi-browser support */
+  -o-transition:color .2s ease-out, background 2s ease-in;
+  -ms-transition:color .2s ease-out, background 2s ease-in;
+  -moz-transition:color .2s ease-out, background 2s ease-in;
+  -webkit-transition:color .2s ease-out, background 2s ease-in;
+
+  transition:color .2s ease-out, background 2s ease-in;
+}
+
+/* Footer Styling */
 .footer {
   text-align: center;
   display: block;
   padding-top: 24px;
   color: #8c8c8c;
   font-size: 12px;
+  line-height: 10px;
 }
 
 .footer #bottom-nav {
@@ -37,10 +79,40 @@ different webpages
   color: #0099ff;
 }
 
+.footer a {
+  text-decoration: none;
+
+  /* Multi-browser support */
+  -o-transition:color .2s ease-out, background 2s ease-in;
+  -ms-transition:color .2s ease-out, background 2s ease-in;
+  -moz-transition:color .2s ease-out, background 2s ease-in;
+  -webkit-transition:color .2s ease-out, background 2s ease-in;
+
+  transition:color .2s ease-out, background 2s ease-in;
+}
+
+.footer a:visited,
+.footer a:link {
+  color: #8c8c8c;
+}
+
 .footer a:hover {
   color: #0099ff;
 }
 
+/* Misc. */
 hr {
   max-width: 910px;
+}
+
+i {
+  border: solid #000000;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(135deg);
 }
