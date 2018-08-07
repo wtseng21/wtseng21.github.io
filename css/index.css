@@ -66,10 +66,6 @@ body {
   opacity: 0.33;
 }
 
-.footer {
-  font-size: 12px;
-}
-
 /* Media Queries */
 @media screen and (max-width: 975px) {
   .header hr {

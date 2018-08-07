@@ -66,11 +66,10 @@ body {
   text-align: left;
 }
 
-.external-links {
-  letter-spacing: 0.5px;
-}
-
 .external-links a {
+  text-decoration: none;
+  border-bottom: 1px solid #0099ff;
+
   /* Multi-browser support */
   -o-transition:color .2s ease-out, background 2s ease-in;
   -ms-transition:color .2s ease-out, background 2s ease-in;
