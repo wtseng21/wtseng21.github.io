@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <title>Wesley Tseng</title>
+  <title>Wesley Tseng - WebGL Cel Shading Project</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="../favicon/favicon.ico" >
@@ -20,7 +20,7 @@
   <meta name="msapplication-TileImage" content="../favicon/favicon-144x144.png">
 
   <!-- CSS Styling -->
-  <link href="../css/projects/spooky_spoils.css" type="text/css" rel="stylesheet"/>
+  <link href="../css/project_styles.css" type="text/css" rel="stylesheet"/>
   <link href="../css/styles.css" type="text/css" rel="stylesheet"/>
   <link href="../css/animate.css" type="text/css" rel="stylesheet"/>
 </head>
@@ -46,7 +46,46 @@
     </div>
 
     <div class="animated fadeIn">
+      <img src="../images/webgl.png" alt="Vindicator Banner"></img>
 
+      <div class="information">
+        <br/>
+        <div class="left">
+          <h3>Description</h3>
+          <hr id="titleline" align="left"/>
+          <p>
+            WebGL Cel Shading was a final project that we proposed to do for our Advanced 3D Computer Graphics course. We decided to put our own twist on the typical cel shading implementation  by attempting to use the sobel operator to detect the edges for outlining. However, we ended up outlining all edges including the ones generated from cel shading and experienced significant aliasing issues.
+          </p>
+
+          <h3>Installation Instructions</h3>
+          <hr id="titleline" align="left"/>
+          <p>
+            Click the following link to access the project:
+            <a href="webgl_cel_shading/cel_shading.html" onclick="window.open(this.href); return false;">shading.html</a>
+          </p>
+        </div>
+
+        <div class="right">
+          <h3>Team</h3>
+          <hr id="titleline" align="left"/>
+          <p>
+            Carolyn Lai<br/>
+            Wesley Tseng
+          </p>
+
+          <h3>Features</h3>
+          <hr id="titleline" align="left"/>
+          <p>
+            • Ability to change the object model<br/>
+            • Change the resolution of the canvas<br/>
+            • Rotate the light and object around the center<br/>
+            • Change the number of cel bands from cel shading<br/>
+            • Alter the diffuse color and outline color of the object<br/>
+            • Enable/Disable cel shading and outlining<br/>
+            • Adjust the strength of the light
+          </p>
+        </div>
+      </div>
 
       <!-- Bottom Navigation -->
       <div class="footer">

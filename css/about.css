@@ -59,3 +59,18 @@ body {
 .external-links a:hover {
   color: #0099ff;
 }
+
+.left {
+  float: left;
+  width: 46%;
+}
+
+.right {
+  float: right;
+  width: 46%;
+}
+
+.about-container h3 {
+  line-height: 0px;
+  padding-top: 20px;
+}
