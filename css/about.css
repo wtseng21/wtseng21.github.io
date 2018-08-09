@@ -38,7 +38,8 @@ body {
   text-align: left;
 }
 
-.external-links a {
+.external-links a,
+.about-container a {
   text-decoration: none;
   border-bottom: 1px solid #0099ff;
 
@@ -52,11 +53,14 @@ body {
 }
 
 .external-links a:visited,
-.external-links a:link{
+.external-links a:link,
+.about-container a:visited,
+.about-container a:link {
   color: #000000;
 }
 
-.external-links a:hover {
+.external-links a:hover,
+.about-container a:hover {
   color: #0099ff;
 }
 
