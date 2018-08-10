@@ -10,9 +10,14 @@ body {
   margin-right: auto;
 }
 
-
 .header h1 {
   letter-spacing: 5px;
   padding-top: 24px;
   padding-bottom: 13px;
+}
+
+.gallery #title {
+  text-align: left;
+  line-height: 0px;
+  padding-top: 20px;
 }
