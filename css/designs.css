@@ -16,8 +16,12 @@ body {
   padding-bottom: 13px;
 }
 
-.gallery #title {
-  text-align: left;
-  line-height: 0px;
-  padding-top: 20px;
+.gallery {
+
+}
+
+.gallery img {
+  max-width: 30%;
+  padding: 13px;
+  vertical-align: middle;
 }
