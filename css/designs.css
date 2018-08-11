@@ -20,6 +20,10 @@ body {
   padding-bottom: 12px;
 }
 
+.gallery h3 {
+  line-height: 0px;
+}
+
 .gallery #title {
   padding-top: 20px;
   text-align: left;
