@@ -17,7 +17,16 @@ body {
 }
 
 .gallery {
+  padding-bottom: 12px;
+}
 
+.gallery #title {
+  padding-top: 20px;
+  text-align: left;
+}
+
+.gallery #titleline {
+  margin-left: 0%;
 }
 
 .gallery img {
