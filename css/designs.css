@@ -13,7 +13,6 @@ body {
 .header h1 {
   letter-spacing: 5px;
   padding-top: 24px;
-  padding-bottom: 13px;
 }
 
 .gallery {
@@ -37,4 +36,12 @@ body {
   max-width: 30%;
   padding: 13px;
   vertical-align: middle;
+}
+
+.header p {
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 12px;
+  padding-bottom: 13px;
+
 }
