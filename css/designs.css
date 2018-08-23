@@ -38,6 +38,10 @@ body {
   vertical-align: middle;
 }
 
+.gallery a {
+  text-decoration: none;
+}
+
 .header p {
   letter-spacing: 2px;
   font-weight: normal;
