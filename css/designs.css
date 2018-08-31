@@ -23,12 +23,12 @@ body {
   line-height: 0px;
 }
 
-.gallery #title {
+.gallery .title {
   padding-top: 20px;
   text-align: left;
 }
 
-.gallery #titleline {
+.gallery .titleLine {
   margin-left: 0%;
 }
 
