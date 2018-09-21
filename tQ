@@ -1,0 +1,859 @@
+[33mcommit d199b68cd9a94b739fe16ffa7f7dc2bb78b688b9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Sep 9 00:01:32 2018 -0700
+
+    Update Currently Working On
+
+[33mcommit 611bb3fb8410b7d7ab7b7a35793096d3bfb62173[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 31 14:38:46 2018 -0700
+
+    Fixed duplicate use of ID of title and titleLine
+
+[33mcommit 0084d48ae3b65aede1cd360b1062018a7bc0eb68[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 31 14:35:35 2018 -0700
+
+    Fixed HTML errors
+
+[33mcommit 19e5a54068544c72a1dedb8fb07a84ad3abca980[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Tue Aug 28 16:16:08 2018 -0700
+
+    Updated Resume
+
+[33mcommit 6f1bb94f6421915219bf47bf42abecdff0c7a35f[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 23 01:17:04 2018 -0700
+
+    Updated to public resume
+
+[33mcommit 26abe8c56c2cdb320b2bb16eb4884a68af44968a[m
+Author: Wesley <wbtseng@uci.edu>
+Date:   Thu Aug 23 01:13:02 2018 -0700
+
+    Updated clickable images for logos
+
+[33mcommit ba37f55f5d35953b52f591113b5eb51dfaf15cfd[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Aug 22 23:45:44 2018 -0700
+
+    Update resume
+
+[33mcommit e4b59a9df3da1edb820551651409973f6091e6a0[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Tue Aug 21 14:31:28 2018 -0700
+
+    Opens resume in a new tab
+
+[33mcommit 4ddbca3663b82fd1ada6443509d99cb3073a8c7a[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Tue Aug 21 14:01:02 2018 -0700
+
+    Updated resume, removed TODO
+
+[33mcommit c6c59f2805bac546f32bb763dfbe5228100e4fb7[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Tue Aug 21 12:59:25 2018 -0700
+
+    Updated Resume Name
+
+[33mcommit d1d78a1739379672a06e3c5b9c85aa339b18a5d2[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Aug 18 22:48:43 2018 -0700
+
+    Updated resume formatting
+
+[33mcommit 4821b76b6237e79af25f8c59381932bd20ac9fbd[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Aug 18 22:42:47 2018 -0700
+
+    Uploaded temporary Resume
+
+[33mcommit 4d927fafb47ed6ed549d55bbb7619d4710c8f60d[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Aug 18 19:50:10 2018 -0700
+
+    Put bullets
+
+[33mcommit cfb961ec51000dc5c2be2bbbdf62a1f853e2cfc6[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Aug 18 19:40:31 2018 -0700
+
+    Page warning for designs.html
+
+[33mcommit 10e4fe0374b4d2792d3d72052a04b595669b4af0[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Aug 18 19:30:10 2018 -0700
+
+    Updated about.html
+
+[33mcommit 92e3ce7997ee51428f9bfa9b4378a86ce3fed8ea[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 10 17:13:09 2018 -0700
+
+    Changed line height of h3
+
+[33mcommit 62e59cf20d1cab2a07cfc1c432f5750065ec00f7[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 10 17:12:36 2018 -0700
+
+    Finished basic designs page
+
+[33mcommit 2224fe501e6f123f30fd233e86310d66c087f0d2[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 10 16:56:44 2018 -0700
+
+    BASIC layout of images
+
+[33mcommit 18f03498d8226e8df1e39526eed4fded4a209bac[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 10 15:59:38 2018 -0700
+
+    Uploaded images and changed back arrow appearance
+
+[33mcommit 84afdac8ff9423390329e91bfd730b0f512c9df1[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 10 12:57:43 2018 -0700
+
+    Fixed redirection on "Currently Working On"
+    
+    - Updated designs.html
+
+[33mcommit f85a55d345a1641550811cd45565f0f83bfe46f3[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 9 01:57:10 2018 -0700
+
+    Fixed Spelling
+    
+    - about.html Current Working On to Currently Working On
+
+[33mcommit 5bfbae66353a4eaf46389a4d8bd897fcfdaa1fc3[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Aug 8 21:25:11 2018 -0700
+
+    Updated about.html
+
+[33mcommit 74ccaa960f093ed3757150d2f7da1cb206648ce1[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Aug 8 21:12:58 2018 -0700
+
+    Updated Roadblocks image
+
+[33mcommit c9d201106f7fd54f0f4b61a630e741bbbd17d476[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Aug 8 21:09:52 2018 -0700
+
+    Updated information for Roadblocks
+
+[33mcommit 33345aebdb2a18137a3b14dab041e5b17bc58fab[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Aug 8 21:08:48 2018 -0700
+
+    Project pages draft are done
+    
+    - Review later for grammatical errors
+
+[33mcommit 4aafb1241f5e4e4ae5cfc49cfef729a413f4e2f3[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Aug 8 20:07:47 2018 -0700
+
+    Reuploaded Nior Game Project
+
+[33mcommit 51f2deac8e8eea5b539d35886509723ed60cfa8e[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Aug 8 18:39:03 2018 -0700
+
+    Increased speed of title fadein
+
+[33mcommit 496776c783712b86770f27a831d65697b45d772d[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Aug 8 18:28:29 2018 -0700
+
+    Projects and About
+    
+    - Finished WebGL Project Page
+    - Added two columsn to about me page
+    - Added lines between smaller titles
+
+[33mcommit fede8f528b7b8c4c9fc14e938ad2ebd48b227b08[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Aug 8 16:47:07 2018 -0700
+
+    Fixed Vindicator control description
+
+[33mcommit 73b60299ae0351a9add616f4333878b5342fc177[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Aug 8 16:43:56 2018 -0700
+
+    Project additions
+    
+    - Removed TYCA project
+    - Finished Vindicator Project Page
+
+[33mcommit 501b7a34cd65ce798623a4736953734965f7e907[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Tue Aug 7 13:09:51 2018 -0700
+
+    Prevent scrollbar from repositioning page
+
+[33mcommit ea4eb41038f1f30349cd5b7a3d02222dfcf5267d[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Tue Aug 7 12:47:46 2018 -0700
+
+    Spooky Spoils Project Page done
+
+[33mcommit 694662f91a355c37cd767c9bdf459160e62f9b72[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Aug 6 23:12:45 2018 -0700
+
+    Temporary paste of information
+
+[33mcommit a3b9d1b92e8481ba48abe058506474b38e320d60[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Aug 6 22:02:39 2018 -0700
+
+    Take out horizontal line in TYCA
+
+[33mcommit a495e913a1b4e63cd25ca00230f8e873437dab4d[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Aug 6 21:46:05 2018 -0700
+
+    Removed horizontal line under subtitle
+
+[33mcommit 9c635f529f731ab711ba7ed38e191c611f4fa8dd[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Aug 6 21:34:35 2018 -0700
+
+    Redirection Issues
+    
+    - Bottom navigation of projects no longer give 404 errors
+    - Fixed spacing between horizontal lines
+    - Projects table redirect to correct pages
+
+[33mcommit d1566ff9481734844e2c4bd50ca6621ae341faba[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Aug 6 21:23:16 2018 -0700
+
+    Basic project template for all projects
+
+[33mcommit e75a8a72b214222ccd2d9cac8983c6b5a9ff52f5[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Aug 6 20:47:05 2018 -0700
+
+    Basic structure of Spooky Spoils Project page
+
+[33mcommit 8635081b78b79ea92058b5a8b59d6489f7176695[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Aug 6 19:30:40 2018 -0700
+
+    Implemented Back Button
+
+[33mcommit 8759372e09768be0977d5a15fc7e56d9cc9836b9[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Aug 6 18:43:41 2018 -0700
+
+    Added TODO for resume
+
+[33mcommit 49f37907f42aa8c82e9640c8e98218f5ba83d7b6[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Aug 6 18:43:20 2018 -0700
+
+    Fixed external links for about.html
+
+[33mcommit 680a048e4c230ede98761036c58df2c6fb925b75[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Aug 6 17:48:45 2018 -0700
+
+    Copyright Line and Margins
+    
+    - Small margin adjustment to index.html and styles.css
+    - Added copyright line at footer of pages
+
+[33mcommit b787c3d26e34969552eea6ad83cc5aaed6e8eb69[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Aug 6 14:52:25 2018 -0700
+
+    Hover effect for projects on projects.html
+
+[33mcommit a7dd0d6c2720a82f006a3ed12d95f61757b9cf53[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Aug 6 12:55:20 2018 -0700
+
+    Globalized <hr> tag max-width
+
+[33mcommit fbbe5ef1e7b14a21a436a26670cde2b4d823401e[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 23:50:12 2018 -0700
+
+    Titles will drop down
+
+[33mcommit 91f7d2690081dc40b4fb52c491b3e33e09368488[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 23:13:35 2018 -0700
+
+    Upload some project files
+
+[33mcommit 4124a80d3ff98730d52de2684da5c76d4f672122[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 22:16:53 2018 -0700
+
+    Reduced top margin on mobile view
+
+[33mcommit b2dd79b4d17d639a45f2d49de832a62708c13736[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 22:14:32 2018 -0700
+
+    Everything except index.html only fades in
+
+[33mcommit 518eed92dae5c0c7e90faaf6728a4723133d604b[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 21:43:43 2018 -0700
+
+    Thumbnails for projects uploaded
+
+[33mcommit 0e07c63a0145a80901b0bdf4198006913c5300e3[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 19:26:32 2018 -0700
+
+    Table layout for projects
+
+[33mcommit ccf082ae49016f1096cc2ff29e22cdf08c562e35[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 17:35:20 2018 -0700
+
+    Fixed selected highlight on designs.html
+
+[33mcommit ab6ce9cccfeaf51e73747f8c049ca36d35fe1da1[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 17:32:32 2018 -0700
+
+    Fixed navigation for designs.html
+
+[33mcommit d341e2bc76e6342e063fd2011e2b418f3c2a3c01[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 17:28:48 2018 -0700
+
+    Added Spooky Spoils project folder
+
+[33mcommit 2fea03c88eb2158e0e4b81f95e0cb04d7b0641cb[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 17:25:09 2018 -0700
+
+    Updated navigation images
+
+[33mcommit 7f3478bb14a8b2d3b45a6cdb2d18f0a14da5c626[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 16:28:33 2018 -0700
+
+    Increased size for smallest width
+
+[33mcommit e7742af050e514efdfe784f3791fe7d4a80aed65[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 15:41:34 2018 -0700
+
+    Basic responsive layout on Home Page
+
+[33mcommit 68ea68a84d26b53e5079004db1f0bb1c4d6f7292[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 14:48:01 2018 -0700
+
+    Added navigation.css to designs and projects
+
+[33mcommit 84afa85d65d63df92af78c99ca447c86b4adf104[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Aug 5 14:24:23 2018 -0700
+
+    Navigation Bar and Minor Adjustments
+    
+    - Added bottom navigation bar for pages
+    - Changed spacing of HOME button
+
+[33mcommit 069928c79cb5ff972cd7b8328b994a74544ca83f[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 3 20:31:53 2018 -0700
+
+    Reduced visibility of Home Button
+    Reduced size of title on index.html
+
+[33mcommit cc6d1b98ce765089b8009521c1ed38a5a6778cab[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 3 19:36:51 2018 -0700
+
+    Changed email address to forwarding record of contact@wesleytseng.com
+
+[33mcommit f02d5bf430a0bb72ee97bfe417aaba53145005cd[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 3 18:30:06 2018 -0700
+
+    External links added
+    
+    // TODO
+    - Resume file upload
+
+[33mcommit b7cb25f1d9cf70e1a5277b06b179493cb42db1c1[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 3 14:39:25 2018 -0700
+
+    Reduced navigation image size to 256x256
+    
+    - Created separate copy to maintain 500x500 dimensions
+
+[33mcommit 0bdcdbc1dd333a116a3687dbfeebcefdf7c3e692[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 3 14:28:22 2018 -0700
+
+    Home button fix
+    
+    - HOME link no longer takes up entire width
+    - Visited link stays black
+
+[33mcommit af3bb7678fed7ed21956c989780d663f8a92ed2a[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Fri Aug 3 00:06:01 2018 -0700
+
+    Fixed spacing
+
+[33mcommit a8914a8bccd03d6459a368086fcb16a31f93a459[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 23:48:57 2018 -0700
+
+    Consistent padding on about
+
+[33mcommit 68e3d5c27d973f03d6a68fe7eb24a533de03d7c8[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 22:02:15 2018 -0700
+
+    Added fade in for home button
+
+[33mcommit d1acb5ad3d2ca92427a89feb3d8c3fd33f09c893[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 21:19:15 2018 -0700
+
+    Reduced image size to 256x256
+
+[33mcommit dff942d54a16e0f9c468cd18971ea22dfb5345d8[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 21:07:04 2018 -0700
+
+    Switched back to HEX encoded email
+
+[33mcommit 3f0af828704462a66b72eff01262effe00796347[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 20:52:18 2018 -0700
+
+    Obscure email address from hover on home page with javascript
+
+[33mcommit b3fe1ef3e594d10a04935993b6187d10350d93f9[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 20:43:36 2018 -0700
+
+    Setup basic structure for projects.html and designs.html
+
+[33mcommit 922312957f58817c926f2bdc91608b4356d1b24e[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 20:28:20 2018 -0700
+
+    Contact directly leads to mailto
+    
+    - Encoded email in basic HEX code
+
+[33mcommit 82d4377f54bd65661f45fb7c7763a6f8708bcc96[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 18:57:31 2018 -0700
+
+    Fixed window resizing issues
+
+[33mcommit 154543cba2409e82115ecf7ca07437a292ee73a8[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 17:44:55 2018 -0700
+
+    index
+    - Increased spacing between horizontal bar and navigation
+    - Increased padding between images
+    - Fixed lack of hover effect on Projects
+
+[33mcommit 1d8b479f53817f4d68ae6aab6fb590f2c0cc6ac0[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 17:40:26 2018 -0700
+
+    Removed text indent
+
+[33mcommit acbbc123720617bd32c3288c964bb4033d069e49[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 17:39:38 2018 -0700
+
+    Renamed about.html and contact.html to stay consistent
+
+[33mcommit 0fce78b527002501515a2af0e3c64fbe19dacbc3[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 16:48:11 2018 -0700
+
+    Switched navigation to flexbox instead of table
+
+[33mcommit 93c0cc29157d16a9efe067eb6a16a1157695e929[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Aug 2 15:49:06 2018 -0700
+
+    Finished about biography
+
+[33mcommit 730953b246f3edf6346c4531ae6a67857aef4a30[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Jul 30 01:24:26 2018 -0700
+
+    Different animations for Contact Page
+    
+    - Contact Me fades down
+    - Horizontal line fade in
+
+[33mcommit e5bf21a0a6eb9695efad2ae784c56d0e4324f0c1[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Jul 30 01:11:30 2018 -0700
+
+    Fixed spacing of logo on Home Page
+
+[33mcommit 453de2ceb9b7051847f2b52617aed9ab7775db1b[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Jul 30 01:07:18 2018 -0700
+
+    Removed home button on home page
+
+[33mcommit 73783681229480e243c137d7adfaec988a9ced53[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Jul 29 11:36:58 2018 -0700
+
+    Renamed 'graphicdesigns' to 'designs' for consistency
+
+[33mcommit 75d4b920089386faf7477fc76473050185b53fd5[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Jul 29 11:10:56 2018 -0700
+
+    Added animation for animate.css
+    
+    - Added fadeInDownSmall
+
+[33mcommit 48da09041ea7d26669a62acf5108402265bcde6e[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Jul 29 11:02:04 2018 -0700
+
+    Profile Pic Size Reduction
+    
+    - Reduced image size to 1024x1024 for faster loading
+
+[33mcommit e8936dc8a5eca0a13b17b493fcafae977b32a07c[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Jul 29 01:23:42 2018 -0700
+
+    Bug with animate.css
+    
+    - Forgot to update animation-name for fadeInUpSmall
+
+[33mcommit 798f5e952ea6ccb2c6be841609437e150262266a[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Jul 29 01:21:56 2018 -0700
+
+    Added Small Animation to animate.css
+    
+    - Added fadeInUpShort at 10%
+    - about.html and contact.html use this animation
+
+[33mcommit 5ece905d15fb474246bc3715fb0e9c0a70b881fb[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sun Jul 29 01:19:25 2018 -0700
+
+    About Page Updates
+    
+    - Laid out format for image and bio
+    - Uploaded profile picture
+
+[33mcommit 95d0fa7d6d78b38910f9514d7aca59c015128e3d[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Jul 28 23:35:13 2018 -0700
+
+    Moved bar below title of website
+
+[33mcommit 4793d67a23b8cef839c4f6c862dd3aa26f684baf[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Jul 28 22:44:38 2018 -0700
+
+    Under construction message for all pages
+
+[33mcommit c859bbea2393439cc1f0010e596d8423258c3da9[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Jul 28 22:01:54 2018 -0700
+
+    Github Page Re-build Trigger
+
+[33mcommit b030c18cf791df756a237f02896e3a66b5a8f7f9[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Jul 28 22:01:32 2018 -0700
+
+    Github Page Build Failure
+
+[33mcommit 70ec681ec09113e3b129c2767a48a7cd260b7fcc[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Jul 28 21:56:40 2018 -0700
+
+    Fixed CSS not selecting .form container class
+
+[33mcommit 7d03e1507a517dbec50997297ea2e4c873d2616f[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Jul 28 21:53:22 2018 -0700
+
+    Fixed naming scheme, changed form to form-container
+
+[33mcommit ae3e45eddc59e9d61f8290a8ac588507025aba1a[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Jul 28 21:49:16 2018 -0700
+
+    Fixed horizontal line break placement
+
+[33mcommit 4105c77e89ae6603d6fa72d5ac804d1028b6ecd6[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Jul 28 21:48:08 2018 -0700
+
+    Fixed left padding for Contact on smaller screens
+
+[33mcommit 38be5d6573ebf0deadd4660002e1a928b25a4be2[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Jul 28 21:45:34 2018 -0700
+
+    Moved horizontal line break to be animated
+
+[33mcommit 2bee9f6f3263a11dbe2cabf3c178e5d42cd50a85[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Jul 28 21:39:33 2018 -0700
+
+    Base structure for Contact Page
+    
+    // TODO
+    - Incorporate JS to build a form
+    - Submit button opens mail app
+
+[33mcommit 751690fe9a952a1a4bec43d0d2da855eac488ae9[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Sat Jul 28 17:08:26 2018 -0700
+
+    Update spacing at margin-top
+
+[33mcommit 5165141302e62b5088998b951db73f9510e574ca[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 23:27:36 2018 -0700
+
+    Reduce spacing between letters on home page
+
+[33mcommit 1146ab4d2091457276ff487d337a4a9896a7cc49[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 23:16:53 2018 -0700
+
+    Created CSS files and pasted base HTML code for pages
+
+[33mcommit 04616a5b18779614569be689cdcb32a9b50b53ee[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 21:46:05 2018 -0700
+
+    Meta data and Structure
+    
+    - Added three .html files for the other 3 pages
+    - Added basic meta keywords to show up on search engines
+
+[33mcommit 18f014a1623bc6c1bd3cdc2b953dc542629d90df[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 16:57:12 2018 -0700
+
+    Removed .html extension from about
+
+[33mcommit 7742397a326bc10772f2c1de0ba38d88213df84a[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 16:56:07 2018 -0700
+
+    Fixed comment for .htaccess Apache
+
+[33mcommit d523b1a78d81d24f716f6463680862cd9cd53806[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 16:55:18 2018 -0700
+
+    Linked CSS to About page
+
+[33mcommit 1d1e3a098aab38af7e2ccd4ff9fafee5bada2e9b[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 16:52:46 2018 -0700
+
+    Page build failure repush
+
+[33mcommit 314301a2e45d06d590642c22bc8f0c5e721270fc[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 16:39:56 2018 -0700
+
+    Deleted about.html
+
+[33mcommit 01ee37a2989a2d224724182d35fbfda857d2ceb5[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 16:39:39 2018 -0700
+
+    Removed about link
+
+[33mcommit e76e7da71ddf98ac51dbfcbe8119b64a19441c0b[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 16:38:34 2018 -0700
+
+    About.html error
+
+[33mcommit 6f460bbca8a7120eed5ee958fc0076f9642f70e8[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 16:36:17 2018 -0700
+
+    Moved about out of separate folder
+
+[33mcommit 65d23a04c47bfc36c80bc4063e4b6af22c537b10[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 15:09:54 2018 -0700
+
+    Setup About Page
+
+[33mcommit 40fe8dd2df47c82d023d13468610137847711899[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 13:17:56 2018 -0700
+
+    Typeface Update
+    
+    - Remove Roboto font files
+    - Changed typeface from sans-serif to helvetica
+
+[33mcommit ed44d64b9313a590fb9c82f475a3b36ffe9de9cd[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Thu Jul 26 12:41:03 2018 -0700
+
+    Switched to static sizing for now
+
+[33mcommit 59ebea82f184393cfe09f369e7ebff5186bd0e69[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Jul 25 23:48:05 2018 -0700
+
+    Updated .htaccess
+
+[33mcommit 64d8c55f601e53d575b3b6cc873d2c65ec860b1e[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Jul 25 23:46:39 2018 -0700
+
+    index.html removal pt 4
+
+[33mcommit aeea3bf24726eeadd9ea36b33da3f0af2054689e[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Jul 25 23:44:17 2018 -0700
+
+    index.html removal pt 3
+
+[33mcommit 9f699180ff1b944fca10279fb40c4960104472bd[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Jul 25 23:41:00 2018 -0700
+
+    Remove index.html pt. 2
+
+[33mcommit 64935e0ae47a410250ee6dc05b43133f5314157a[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Jul 25 23:39:52 2018 -0700
+
+    Attempt to remove index.html from URL on home
+
+[33mcommit 202ab2c3aa0d41249f3aaeda6323b226d1317561[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Jul 25 23:38:05 2018 -0700
+
+    Removed .html from a href in index
+
+[33mcommit 75ad875952f030f163c4a503af2e0df4d8a96ea5[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Jul 25 23:36:32 2018 -0700
+
+    Re-did .htaccess
+
+[33mcommit 4b539c0bdf527baeadeb71b0e9568206a9b9033b[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Wed Jul 25 23:28:38 2018 -0700
+
+    Temporary JS for About me page
+    
+    // TODO
+    - Figure out fade effect between pages
+    - htaccess attempt to filter out extensions
+
+[33mcommit ae33baaec5935ec0bff409c502ef053c290d4466[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Tue Jul 24 16:32:15 2018 -0700
+
+    Fade into color on Hover for Home Button
+
+[33mcommit bd4306fdd56936b7e127a51b26e642d4fa13ddd1[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Tue Jul 24 11:56:18 2018 -0700
+
+    Fading Transitions and Home Button
+    
+    - Logo and navigation now fade in
+    - About links to aboutme.html
+    - Home button will highlight on hover
+    
+    // TODO
+    - Update CSS on aboutme.html
+    - Link all images to pages in navigation
+    - Animation on "HOME" button
+
+[33mcommit b96a1a1e59bb459d2eeef8365f26714c9b04579e[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Jul 23 22:27:11 2018 -0700
+
+    404 Fix Part 2
+
+[33mcommit 57e7a1840ac89e8308669bb1d3d10ce8934c6674[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Jul 23 22:24:21 2018 -0700
+
+    Case-sensitive 404 Error fix
+
+[33mcommit a5512aed302775d7ed260b536f5fa4429960793a[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Jul 23 22:22:01 2018 -0700
+
+    Main navigation implemented
+    
+    - Images resize in table
+    - Hover effect for images
+
+[33mcommit 9290f647a22c26eb2edf19231c8be7ab967d142a[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Jul 23 17:08:48 2018 -0700
+
+    Added images and text
+    
+    - Created line
+
+[33mcommit 0b0be443df7881dd248f4ef361d2517f0162adb4[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Jul 23 15:09:55 2018 -0700
+
+    Create CNAME
+
+[33mcommit ad2892939240450dc37bd595d496cb4d7e51951a[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Jul 23 12:30:01 2018 -0700
+
+    Revert.
+
+[33mcommit 5d3de25d923c64e2ffeb1967cda4619caaae7b7a[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Jul 23 12:16:03 2018 -0700
+
+    Renamed home to index.
+
+[33mcommit a4270d7030d01307443dbfc360cd70e964bc6f76[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Jul 23 12:15:18 2018 -0700
+
+    Migrated files.
+
+[33mcommit 0b34c959b977a7ec90acf5b1b80ba65003cf8b70[m
+Author: Wesley Tseng <tsengwes1121@gmail.com>
+Date:   Mon Jul 23 12:10:27 2018 -0700
+
+    Initial commit.
